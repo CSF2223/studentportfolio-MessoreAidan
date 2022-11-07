@@ -82,6 +82,27 @@ body {
 .button:hover {
     background-color: #361356;
     color: #c5b358;
-    transform: scale(1.5);
+    transform: scale(1.5)
     /* (150% zoom - note: if the zoom is too large, it will go outside the viewport) */
+}
+
+@media (min-width: 800px) {
+    .hero {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 90vh;
+    }
+    
+    .heroText {
+        font-size: 1rem;
+    }
+    
+    .heroName {
+        font-size: 3.5rem;
+    }
+    
+    .button {
+        font-size: 1.1rem;
+    }
 }
